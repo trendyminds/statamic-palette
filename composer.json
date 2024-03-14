@@ -1,8 +1,9 @@
 {
     "name": "trendyminds/statamic-palette",
+    "description": "Palette allows you to easily jump between areas, entries, assets, and users within Statamic without lifting your hands off the keyboard!",
     "version": "1.0.0",
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "statamic/cms": "^4.0"
     },
     "autoload": {
@@ -13,7 +14,7 @@
     "extra": {
         "statamic": {
             "name": "Palette",
-            "description": "Palette addon"
+            "description": "A command palette to jump to specific areas within Statamic"
         },
         "laravel": {
             "providers": [
@@ -25,6 +26,9 @@
         "laravel/pint": "^1.14"
     },
     "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
         "allow-plugins": {
             "pixelfear/composer-dist-plugin": true
         }
