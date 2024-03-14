@@ -24,7 +24,7 @@ That should also exist in the CMS you use most, right? With Palette you can now 
 ## 📦 Installing
 
 - Run `composer require trendyminds/statamic-palette`
-- Publish the config file by running `php artisan vendor:publish --tag="palette-config"`
+- Optionally publish the config file by running `php artisan vendor:publish --tag="palette-config"`
 - Add the following right before your closing `</body>` in your main layout file:
 
 ```html
@@ -33,6 +33,23 @@ That should also exist in the CMS you use most, right? With Palette you can now 
 
 <!-- if Blade -->
 {{ Statamic::tag('palette')->fetch() }}
+```
+
+- To enable searching your site's content, you need to create a `palette` [search index](https://statamic.dev/search#indexes) within Statamic. Make sure you update the index after creating it! Below is an example of what that might look like in `config/statamic/search.php`:
+
+```php
+    'indexes' => [
+
+        // ...your other search indexes
+
+        // Palette search
+        'palette' => [
+            'driver' => 'local',
+            'searchables' => 'all',
+            'fields' => ['title', 'summary'],
+        ],
+
+    ]
 ```
 
 ## 🤝 Contributing

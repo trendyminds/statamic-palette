@@ -11,6 +11,7 @@ use Statamic\Facades\Entry;
 use Statamic\Facades\Fieldset;
 use Statamic\Facades\Form;
 use Statamic\Facades\GlobalSet;
+use Statamic\Facades\Search;
 use Statamic\Facades\Site;
 use Statamic\Facades\Taxonomy;
 use Statamic\Facades\Utility;
@@ -227,6 +228,11 @@ class ActionsController extends CpController
 
     private function _getContextActions(): array
     {
+        // Don't load the ability to search the site content if the palette search context doesn't exist
+        if (! Search::indexes()->get('palette')) {
+            return [];
+        }
+
         return [
             [
                 'name' => 'Find content',
