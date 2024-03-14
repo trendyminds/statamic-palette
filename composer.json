@@ -1,0 +1,32 @@
+{
+    "name": "trendyminds/statamic-palette",
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.0",
+        "statamic/cms": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Trendyminds\\Palette\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Palette",
+            "description": "Palette addon"
+        },
+        "laravel": {
+            "providers": [
+                "Trendyminds\\Palette\\ServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "laravel/pint": "^1.14"
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    }
+}

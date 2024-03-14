@@ -1,0 +1,17 @@
+{
+  "resources/css/addon.css": {
+    "file": "assets/addon-n8KyRrUM.css",
+    "src": "resources/css/addon.css",
+    "isEntry": true
+  },
+  "resources/js/Init.jsx": {
+    "file": "assets/Init-mvsLkXpt.js",
+    "src": "resources/js/Init.jsx",
+    "isEntry": true
+  },
+  "resources/js/access.js": {
+    "file": "assets/access-D2Qxh_La.js",
+    "src": "resources/js/access.js",
+    "isEntry": true
+  }
+}
