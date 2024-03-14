@@ -1,5 +1,10 @@
 # Changelog
 
+### v1.0.2 (2024-03-14)
+
+### What's fixed
+* Add further compatibility for CTRL vs CMD in various browsers
+
 ### v1.0.1 (2024-03-14)
 
 ### What's fixed
