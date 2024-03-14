@@ -15,7 +15,7 @@ That should also exist in the CMS you use most, right? With Palette you can now 
 - 🔍 Available on the front-end and in the control panel
 - 🌗 Light and dark mode support
 - ⭐️ Zero setup necessary; just install and enable
-- 🏎 Compatible with full-page static caching strategies like [Blitz](https://putyourlightson.com/plugins/blitz)
+- 🏎 Compatible with full-page static caching strategies
 - 🔐 Actions change based on user permissions and if admin changes are allowed
 - 🎛️ Change contexts to filter actions or search your content
 - 🔌 Plugins that register navigation links, settings areas, and utilities are included automatically
