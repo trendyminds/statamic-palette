@@ -52,6 +52,10 @@ That should also exist in the CMS you use most, right? With Palette you can now 
     ]
 ```
 
+## Tests
+
+This project does not currently have tests, but I would love to encorporate them in subsequent versions
+
 ## 🤝 Contributing
 
 If you would like to contribute to Palette we tried to make it as easy as possible:
