@@ -1,3 +1,17 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer base {
+  ::-webkit-scrollbar {
+    @apply p-w-2 p-h-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply p-bg-white/70 dark:p-bg-zinc-950/90;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply p-bg-white dark:p-bg-zinc-950;
+  }
+}
