@@ -1,5 +1,11 @@
 # Changelog
 
+### v1.0.3 (2024-03-27)
+
+### What's new
+* Palette terminal icon displays on front-end when active
+* Palette now closes when clicking outside the modal boundary
+
 ### v1.0.2 (2024-03-14)
 
 ### What's fixed
