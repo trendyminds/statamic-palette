@@ -1,5 +1,10 @@
 # Changelog
 
+### v1.0.4 (2024-03-28)
+
+### What's new
+* Exclude navigation items that do not have a URL destination
+
 ### v1.0.3 (2024-03-27)
 
 ### What's new
