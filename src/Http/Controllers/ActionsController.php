@@ -79,6 +79,7 @@ class ActionsController extends CpController
 
     private function _navigationActions(): array
     {
+        // Get all the navigation items but exclude any that don't have a URL
         $actions = Nav::build()
             ->map(fn ($section) => collect($section['items'])->map(fn ($item) => [
                 'name' => $item->display(),
@@ -88,7 +89,9 @@ class ActionsController extends CpController
                 'icon' => 'menu',
             ])
             )
-            ->flatten(1);
+            ->flatten(1)
+            ->filter(fn ($item) => $item['url'])
+            ->values();
 
         if ($this->_isCpRequest()) {
             $actions->prepend([
