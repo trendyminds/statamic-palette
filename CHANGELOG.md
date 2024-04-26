@@ -1,5 +1,11 @@
 # Changelog
 
+### v1.0.5 (2024-04-26)
+
+### What's fixed
+* Lengthy text is truncated to prevent awkward wrapping
+* Improved UI for smaller screen sizes
+
 ### v1.0.4 (2024-03-28)
 
 ### What's new
