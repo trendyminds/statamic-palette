@@ -1,0 +1,30 @@
+name: Code Style
+
+on: [pull_request]
+
+jobs:
+  style:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.2
+        tools: composer:v2
+
+    - name: Install NPM dependencies
+      run: npm ci
+
+    - name: Install Composer dependencies
+      run: composer install --no-interaction --prefer-dist --optimize-autoloader
+
+    - name: Run Prettier & Pint
+      run: npm run format
+
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Apply formatting changes
