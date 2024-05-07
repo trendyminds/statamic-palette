@@ -1,5 +1,10 @@
 # Changelog
 
+### v1.1.0 (2024-05-07)
+
+### What's new
+* Add support for Statamic 5
+
 ### v1.0.5 (2024-04-26)
 
 ### What's fixed
