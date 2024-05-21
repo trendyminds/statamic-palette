@@ -1,7 +1,7 @@
 {
     "name": "trendyminds/statamic-palette",
     "description": "Palette allows you to easily jump between areas, entries, assets, and users within Statamic without lifting your hands off the keyboard!",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "require": {
         "php": "^8.2",
         "statamic/cms": "^4.0|^5.0"

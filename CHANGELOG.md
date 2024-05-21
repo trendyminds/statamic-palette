@@ -1,5 +1,10 @@
 # Changelog
 
+### v1.2.0 (2024-05-21)
+
+### What's new
+* Add dark mode support based on Statamic's settings
+
 ### v1.1.0 (2024-05-07)
 
 ### What's new

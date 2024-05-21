@@ -10,4 +10,8 @@ module.exports = {
 		sm: '640px',
 		md: '768px',
 	},
+	darkMode: [
+		'variant',
+		['@media (prefers-color-scheme: dark) { & }', 'html[class*="dark"] &'],
+	],
 }
