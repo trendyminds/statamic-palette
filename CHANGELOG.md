@@ -1,5 +1,10 @@
 # Changelog
 
+### v1.2.1 (2024-05-30)
+
+### What's fixed
+* Force Tailwind's default font stack across all elements
+
 ### v1.2.0 (2024-05-21)
 
 ### What's new
