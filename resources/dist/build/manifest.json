@@ -1,16 +1,21 @@
 {
   "resources/css/addon.css": {
-    "file": "assets/addon-B2_wd0O_.css",
+    "file": "assets/addon-bTsJ-cLf.css",
     "src": "resources/css/addon.css",
-    "isEntry": true
+    "isEntry": true,
+    "names": [
+      "addon.css"
+    ]
   },
   "resources/js/Init.jsx": {
-    "file": "assets/Init-BUe8ng-P.js",
+    "file": "assets/Init-CU1YYy7J.js",
+    "name": "Init",
     "src": "resources/js/Init.jsx",
     "isEntry": true
   },
   "resources/js/access.js": {
     "file": "assets/access-D2Qxh_La.js",
+    "name": "access",
     "src": "resources/js/access.js",
     "isEntry": true
   }
