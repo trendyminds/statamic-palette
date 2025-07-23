@@ -1,30 +1,25 @@
-import { atom, selector, useRecoilState, useRecoilValue } from 'recoil'
+import { atom, useAtom } from 'jotai'
+// import { atom as jotaiAtom } from 'jotai'
+import { useMemo } from 'react'
 import { queryState } from './useQuery'
 
-const unfilteredActionsState = atom({
-	key: 'unfilteredActionsState',
-	default: [],
-})
+const unfilteredActionsState = atom([])
 
-const actionsState = selector({
-	key: 'actionsState',
-	get: ({ get }) => {
-		const query = get(queryState)
-		const unfilteredActions = get(unfilteredActionsState)
+// Jotai does not have selectors, so we use useMemo for derived state
+
+export default function useActions() {
+	const [unfilteredActions, setUnfilteredActions] = useAtom(
+		unfilteredActionsState
+	)
+	const [query] = useAtom(queryState)
+	const actions = useMemo(() => {
 		return unfilteredActions.filter((action) => {
 			return (
 				action.name.toLowerCase().includes(query.toLowerCase()) ||
 				action.subtitle.toLowerCase().includes(query.toLowerCase())
 			)
 		})
-	},
-})
-
-export default function useActions() {
-	const [unfilteredActions, setUnfilteredActions] = useRecoilState(
-		unfilteredActionsState
-	)
-	const actions = useRecoilValue(actionsState)
+	}, [unfilteredActions, query])
 
 	async function getActions() {
 		const response = await fetch('/!/statamic-palette/actions')
