@@ -1,5 +1,10 @@
 # Changelog
 
+### v1.3.0 (2025-07-23)
+
+### What's fixed
+* Update all dependencies
+
 ### v1.2.1 (2024-05-30)
 
 ### What's fixed
