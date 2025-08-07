@@ -1,5 +1,10 @@
 # Changelog
 
+### v1.4.0 (2025-08-07)
+
+### What's new
+* Migrate to Tailwind 4.x
+
 ### v1.3.0 (2025-07-23)
 
 ### What's fixed
