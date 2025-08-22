@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Once [Statamic 6](https://statamic.com/blog/statamic-6-sneak-peek) is released Palette will be retired. The control panel will have a first-party command palette you should use instead!
+
 # <img src="src/icon.svg" height="20" width="20"> Palette
 ⌨️ CMD+K your way around Statamic!
 
